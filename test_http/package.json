@@ -1,1 +1,8 @@
-{}
+{
+  "scripts": {
+    "app": "nodemon app.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

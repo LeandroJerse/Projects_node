@@ -1,9 +1,17 @@
 import express from "express"
-const app = express()
+import path from 'path'
+import {fileURLToPath} from 'url'
 
+const app = express()
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 app.get("/", function(req,res){
-  res.send("Welcome to my app")    
+  res.sendFile(__dirname + "/html/index.html")   
+})
+
+app.get("/sobre",function(req,res){
+    res.sendFile(__dirname + "/html/sobre.html")
 })
 
 app.get("/blog",function(req,res){
