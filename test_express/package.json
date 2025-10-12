@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "app": "nodemon app.js",
     "connection": "nodemon repository/connection.js",
-    "post": "nodemon repository/PostRepository.js"
+    "post": "nodemon repository/PostRepository.js",
+    "user": "nodemon repository/UserRepository.js"
   },
   "keywords": [],
   "author": "",
