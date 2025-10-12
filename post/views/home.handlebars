@@ -1,0 +1,10 @@
+<h1>Post list: </h1>
+
+{{#each posts}}
+    <h2>{{this.title}}</h2>
+    <p>{{this.content}}</p>
+    <a href="/deletepost/{{this.id}}"><button>Deletar</button></a>
+    <hr>
+{{/each}}
+
+<a href="/cad"><button>Create Post</button></a>
